@@ -1,16 +1,486 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <style>
-    body { font-family: sans-serif; margin: 2rem; }
-    h1 { color: #333; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio | Mustaq Mujahid Mim</title>
+  <link rel="icon" type="image/x-icon" href="files/icon.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-  <h1>Hello, I'm Mustaq Mujahid Mim</h1>
-  <p>Welcome to my portfolio!</p>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <div class="nav-content">
+
+      <div class="logo">Mustaq Mujahid Mim</div>
+
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul class="nav-links">
+        <!-- <li><a href="#about">About</a></li> -->
+        <li><a href="#experience">Experience</a></li>
+        <!-- <li><a href="#competitive">Competitive</a></li> -->
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#hackathons">Hackathons</a></li> -->
+        <li><a href="#education">Education</a></li>
+        <!-- <li><a href="#cocurricular">Co-curricular</a></li> -->
+        <li><a href="#skills">Skills</a></li>
+        <!-- <li><a href="#research">Research</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+        <li class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+
+      <h1 class="section-title">About Me</h1>
+
+      <div class="about-content">
+
+        <div class="profile-image">
+          <img src="files/photo.jpg" alt="Mustaq Mujahid Mim">
+        </div>
+
+        <div class="about-text">
+
+          <h2>Hello, I'm <span class="highlight">Mustaq Mujahid Mim</span></h2><br>
+
+          <p>I’m a Software Engineering Intern with a strong foundation in JavaScript, TypeScript, and React, actively
+            seeking full-time opportunities as a Software Engineer or Associate Software Engineer. My journey is guided
+            by a passion for computer security, with my undergraduate thesis focused on <span
+              class="highlight">Self-Sovereign Identity (SSI)</span>
+            and a growing interest in blockchain and smart contract development.
+
+            I thrive in full-stack environments — from crafting interactive UIs to building and testing scalable APIs. I
+            use <span class="highlight">Ubuntu</span> as my daily driver since 2022 and with a solid understanding of
+            Linux internals,
+            computer networking, Docker, and cloud platforms like AWS, I often dive deep into the systems side of
+            development — from deploying containers to debugging low-level <span class="highlight">OS/network
+              behavior</span>. Have hands-on experience
+            with tools across the development lifecycle: Postman, JMeter, Prometheus, Grafana, and automation/testing
+            pipelines.
+
+            I'm currently deepening my backend knowledge with FastAPI, while exploring cutting-edge AI technologies
+            including RAG (Retrieval-Augmented Generation), LLMs, and AI agents. I aim to become a <span
+              class="highlight">Pi-shaped</span> engineer —
+            with deep expertise in backend, DevOps, and security, supported by broad knowledge across the stack.
+
+            Let’s connect if you’re working in software engineering, security, or AI-driven systems — or just want to
+            share knowledge and ideas!
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+
+          <h3>Software Development Intern</h3>
+
+          <p><i>Omukk | June 2025 - September 2025</i></p>
+
+          <ul>
+
+            <li>Worked on developing the whole UI/UX and integrated APIs of a <strong>higher study consultancy
+                platform</strong>,
+              translating <strong>Figma designs</strong> into a robust front-end interface. This platform included
+              multi-step forms and different dashboards for different user roles (admin, agent, student).</li>
+            <li>Developed a <strong>responsive fundraising website</strong> inspired by GoFundMe.</li>
+            <li>Tools Used: React · Typescript · Tailwind CSS · Zod · React-hook-form · React-router</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Sexual Harassment Prevention and Protection Cell</h3>
+          <p>Built a <strong>web platform for sexual harassment reporting and tracking</strong> for our University,
+            which was awarded <strong>runners up</strong> for <strong>E-governance and Innovation Showcasing</strong>.
+            Entire project was maintained with proper requirements engineering and software development life cycle.
+            Tools Used: Figma · React · Express.js · Tailwind CSS · MongoDB · Postman.</p>
+          <div class="project-links">
+            <a href="https://github.com/mmmim24/CSE350" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Sport Station</h3>
+          <p>Designed and developed a full-stack <strong>online sports shop</strong> as a single vendor e-commerce to
+            sell various sports instruments. Used ExpressJS and MySQL together without any ORM. Tools Used: React ·
+            Express · MySQL · Bootstrap.</p>
+          <div class="project-links">
+            <a href="https://github.com/mmmim24/Sport-Station" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Course Management System</h3>
+          <p>Developed a <strong>student-teacher course management platform</strong> using relational database. Used
+            Apache Tomcat server for JSP pages. Tools Used: Apache TomCat · JavaServer Pages (JSP) · MySQL · Bootstrap.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/mmmim24/CMS" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Sneaky</h3>
+          <p>Developed a <strong>children's word making game</strong> using <strong>Java Swing</strong>. The player has
+            to move a snake avoiding obstacles and dangers to collect letters for making the word in the display. Tools
+            Used: Java · Java Swing.</p>
+          <div class="project-links">
+            <a href="https://github.com/Ishrar2019331104/Sneaky" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Solo Projects</h3>
+          <p>Developed a priority-based <a href="https://dudedid.vercel.app/">kanban style task tracker</a> with
+            database and Google authentication integration using Supabase. Implemented a <a
+              href="https://three6ix.vercel.app/">Korean party game</a> in React for fun. Tried some libraries for
+            visualizing <a href="https://finvis-pied.vercel.app/">cryptocurrency prices and stock market</a>. Tools
+            Used: Docker · React · Tailwind CSS · Vercel · Supabase.</p>
+          <div class="project-links">
+            <a href="https://github.com/mmmim24/dudedid" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://github.com/mmmim24/three6IX" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://github.com/mmmim24/finvis" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+
+          <h3>B.Sc. in Computer Science & Engineering</h3>
+
+          <p><i>Shahjalal University of Science & Technology (SUST) | February 2020 - July 2025</i></p>
+
+          <ul>
+            <li>Undergraduate Thesis: <b>Application Agnostic Performance Measurement Framework for Self Sovereign
+                Identity based Applications</b></li>
+            <li>Secretary of Organizing: <b>SUST ACM Student Chapter</b></li>
+            <li>Publication Secretary: <b>CSE Society SUST</b></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Skills & Technologies</h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+
+          <h3>Programming Languages</h3>
+
+          <div class="skill-items">
+            <span class="skill-item"><i class="fas fa-code"></i> C++</span>
+            <span class="skill-item"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-item"><i class="fab fa-js"></i> TypeScript</span>
+            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+            <!-- <span class="skill-item"><i class="fab fa-ethereum"></i> Solidity</span> -->
+          </div>
+
+        </div>
+
+        <div class="skill-category">
+
+          <h3>Frameworks & Libraries</h3>
+
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-react"></i> React</span>
+            <span class="skill-item"><i class="fab fa-node-js"></i> Node.js</span>
+            <span class="skill-item"><i class="fab fa-node-js"></i> Express.js</span>
+            <span class="skill-item"><i class="fas fa-bolt"></i> FastAPI</span>
+            <!-- <span class="skill-item"><i class="fab fa-python"></i> Django</span> -->
+          </div>
+
+        </div>
+
+        <div class="skill-category">
+
+          <h3>Tools & Technologies</h3>
+
+          <div class="skill-items">
+            <span class="skill-item"><i class="fab fa-docker"></i> Docker</span>
+            <!-- <span class="skill-item"><i class="fas fa-dharmachakra"></i> Kubernetes</span> -->
+            <span class="skill-item"><i class="fab fa-aws"></i> AWS</span>
+            <span class="skill-item"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="skill-item"><i class="fab fa-linux"></i> Linux</span>
+            <span class="skill-item"><i class="fas fa-database"></i> MongoDB</span>
+            <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
+          </div>
+
+        </div>
+
+        <div class="skill-category">
+
+          <h3>DevOps & Monitoring</h3>
+
+          <div class="skill-items">
+            <span class="skill-item"><i class="fas fa-chart-bar"></i> Prometheus</span>
+            <span class="skill-item"><i class="fas fa-chart-line"></i> Grafana</span>
+            <!-- <span class="skill-item"><i class="fab fa-jenkins"></i> Jenkins</span> -->
+            <span class="skill-item"><i class="fas fa-tachometer-alt"></i> JMeter</span>
+            <span class="skill-item"><i class="fas fa-paper-plane"></i> Postman</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Competitive Programming Section -->
+  <section id="competitive" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Competitive Programming</h2>
+
+      <div class="competitive-grid">
+
+        <div class="competitive-card">
+
+          <div class="competitive-header">
+            <i class="fas fa-code competitive-icon"></i>
+            <h3>Codeforces</h3>
+          </div>
+
+          <p><i class="fas fa-star"></i> Max Rating: 1371 (Pupil)</p>
+
+          <p><i class="fas fa-check-circle"></i><a href="https://codeforces.com/profile/MMMim/">Solved 500+ problems</a>
+          </p>
+
+        </div>
+
+        <div class="competitive-card">
+
+          <div class="competitive-header">
+            <i class="fas fa-code competitive-icon"></i>
+            <h3>LeetCode</h3>
+          </div>
+
+          <p><i class="fas fa-star"></i> Max Rating: 1424</p>
+
+          <p><i class="fas fa-check-circle"></i> <a href="https://leetcode.com/u/mmmim/">Solved 100+ problems</a></p>
+
+        </div>
+
+        <div class="competitive-card">
+
+          <div class="competitive-header">
+            <i class="fas fa-code competitive-icon"></i>
+            <h3>Participation</h3>
+          </div>
+
+          <p><i class="fas fa-star"></i> Participated in Intra SUST programming contest 2023, and</p>
+
+          <p><i class="fas fa-check-circle"></i> <a href="https://icpc.global/ICPCID/JV4X000UBD7K">ICPC Asia Dhaka
+              Regional Site Online Preliminary
+              Contest in 2022 and 2021 .</a></p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hackathon Section -->
+  <section id="hackathons" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Hackathon Experience</h2>
+
+      <div class="hackathon-grid">
+
+        <div class="hackathon-card">
+          <h3>SUST E-governance and Innovation Showcasing 2024</h3>
+          <p><i class="fas fa-trophy"></i><i> 1st Runners Up</i></p>
+          <p>Awarded runners up for <strong>E-governance and Innovation Showcasing</strong> at SUST</p>
+        </div>
+
+        <div class="hackathon-card">
+          <h3>Code Samurai Preliminary 2024</h3>
+          <p><i class="fas fa-trophy"></i><i> Advanced to Next Round</i></p>
+          <p>Attended the prestigious <a href="https://github.com/mmmim24/CS2024Preli">Code Samurai 2024 Preliminary</a>
+            and moved on to the next round with selected top 300 teams in Bangladesh</p>
+        </div>
+
+        <div class="hackathon-card">
+          <h3>Leading University Hackathon 2022</h3>
+          <p><i class="fas fa-trophy"></i><i> Champion</i></p>
+          <p>Became <strong>champion</strong> by building an MVP of a multi-vendor e-commerce platform with features of
+            <strong>pro users, payment gateway, bidding</strong> for customers and others
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Co-curricular Section -->
+  <section id="cocurricular" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Co-curricular Activities</h2>
+
+      <div class="activities-grid">
+
+        <div class="activity-card">
+          <h3>SUST ACM Student Chapter</h3>
+          <p><i class="fas fa-user-tie"></i><i> Secretary of Organizing</i></p>
+          <p>Organized workshops on git, software development, and hackathons as <strong>Secretary of
+              Organizing</strong> (Deputy Head of a team of 9 persons) in <strong><a
+                href="https://sustsc.acm.org/members.html">SUST ACM Student Chapter</a></strong></p>
+        </div>
+
+        <div class="activity-card">
+          <h3>SUST CSE Carnival 2024</h3>
+          <p><i class="fas fa-user-tie"></i><i> Organizer and Publication Secretary</i></p>
+          <p>Organized the hackathon in <strong>SUST CSE Carnival 2024</strong> leading a team of 15. Worked as a
+            sub-editor in the carnival magazine as <strong>Publication Secretary</strong> of CSE Society, SUST</p>
+        </div>
+
+        <div class="activity-card">
+          <h3>WordCamp Sylhet</h3>
+          <p><i class="fas fa-user-tie"></i><i> Volunteer</i></p>
+          <p>Contributed to a diverse range of volunteering activities, including <strong>WordCamp Sylhet</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Section -->
+  <section id="research" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Research</h2>
+
+      <div class="research-grid">
+
+        <div class="research-card">
+          <h3>Application Agnostic Performance Measurement Framework for Self Sovereign Identity based Applications</h3>
+          <p><i class="fas fa-book"></i><i> Thesis | 2024–2025</i></p>
+          <p>Worked on an undergraduate thesis focusing on building a <strong>performance measurement framework</strong>
+            for blockchain-based SSI applications. It focuses on simulating and testing various SSI cloud agent APIs,
+            integrating <strong>JMeter, Prometheus, and Grafana</strong> to show performance comparisons.</p>
+        </div>
+
+        <div class="research-card">
+          <h3>Multimodal Song Genre Classification from Bangla Lyrics (Text and Audio)</h3>
+          <p><i class="fas fa-book"></i><i> Machine Learning Project | 2024–2025</i></p>
+          <p>Worked on a machine learning project for academic purposes, focusing on comparing and evaluating model
+            performances for best results on Bangla song genre classification. Used CNN, FNN, various BERT models, and
+            transformer models including DistilHuBERT, ASTFineTuning, and Wav2Vec2.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-content">
+
+        <div class="social-links">
+          <a href="https://github.com/mmmim24/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mmmim/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:mustaqmujahidmim@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+        <div class="contact-text">
+          <p class="resume"><a href="files/Mustaq_Mujahid_Mim_Resume.pdf" download>Download my resume</a></p>
+          <p>Feel free to reach out for collaborations, opportunities, or just to connect!</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
