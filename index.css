@@ -6,7 +6,7 @@
     --text-color: #fff;
     --card-bg: #222;
     --shadow-color: rgba(255, 255, 255, 0.13);
-    --transition: all 0.3s ease;
+    --transition: all 0.5s ease;
     --sans-font: 'Alan Sans', sans-serif;
     --code-font: 'SUSE mono', monospace;
     --box-font: 'Electrolize', sans-serif;
@@ -65,9 +65,22 @@ body {
 
 .logo {
     font-family: var(--sans-font);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.logo img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
 }
 
 .nav-toggle {
@@ -106,6 +119,10 @@ body {
     align-items: center;
 }
 
+#contact {
+    min-height: 50vh;
+}
+
 .section-title {
     font-family: var(--sans-font);
     font-size: 2.5rem;
@@ -129,6 +146,7 @@ body {
 /* Cards */
 .project-card,
 .competitive-card,
+.skill-category,
 .hackathon-card,
 .research-card,
 .activity-card {
@@ -154,11 +172,12 @@ body {
 }
 
 .project-card:hover,
+.skill-category:hover,
 .competitive-card:hover,
 .hackathon-card:hover,
 .research-card:hover,
 .activity-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 /* Grid Layouts */
@@ -224,20 +243,28 @@ body {
 
 .resume {
     border: 2px solid var(--text-color);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     margin: 2rem auto;
-    max-width: 360px;
+    max-width: 210px;
     border-radius: 0.5rem;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 800;
+    transition: var(--transition);
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.resume:hover {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 .contact-text {
     text-align: center;
     margin: 2rem;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 
 .contact-text a {
@@ -270,7 +297,7 @@ body {
 
 .back-to-top.show {
     display: flex;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.5s ease;
 }
 
 a {
@@ -310,12 +337,12 @@ a {
     border-radius: 50%;
     border: var(--text-color) 2px solid;
     padding: 4px;
-    box-shadow: 30px 30px var(--shadow-color),
-        20px 20px var(--shadow-color),
-        10px 10px var(--shadow-color),
-        -10px -10px var(--shadow-color),
-        -20px -20px var(--shadow-color),
-        -30px -30px var(--shadow-color);
+    box-shadow: 30px -30px var(--shadow-color),
+        20px -20px var(--shadow-color),
+        10px -10px var(--shadow-color),
+        -10px 10px var(--shadow-color),
+        -20px 20px var(--shadow-color),
+        -30px 30px var(--shadow-color);
 }
 
 /* Skills Section */
@@ -390,6 +417,11 @@ a {
 
 /* Animation for icons */
 .skill-item:hover i,
+.timeline-item i,
+.hackathon-card i,
+.activity-card i,
+.project-card i,
+.research-card i,
 .competitive-card i {
     animation: pulse 2s infinite;
 }
@@ -438,6 +470,8 @@ a {
 
     .nav-links.show {
         display: flex;
+        padding: 1rem 0;
+        animation: fadeIn 0.5s ease;
     }
 
     .about-content {
@@ -450,12 +484,18 @@ a {
         max-width: 150px;
         border: var(--text-color) 1px solid;
         padding: 2px;
-        box-shadow: 15px 15px var(--shadow-color),
-            10px 10px var(--shadow-color),
-            5px 5px var(--shadow-color),
-            -5px -5px var(--shadow-color),
-            -10px -10px var(--shadow-color),
-            -15px -15px var(--shadow-color);
+        box-shadow: 15px -15px var(--shadow-color),
+            10px -10px var(--shadow-color),
+            5px -5px var(--shadow-color),
+            -5px 5px var(--shadow-color),
+            -10px 10px var(--shadow-color),
+            -15px 15px var(--shadow-color);
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        padding: 5rem 0 3rem 0;
     }
 }
 
