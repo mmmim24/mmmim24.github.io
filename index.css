@@ -334,7 +334,7 @@ a {
 .profile-image img {
     width: 100%;
     max-width: 300px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: var(--text-color) 2px solid;
     padding: 4px;
     box-shadow: 30px -30px var(--shadow-color),
